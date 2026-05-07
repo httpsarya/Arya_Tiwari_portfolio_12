@@ -247,7 +247,7 @@ function App() {
               </motion.div>
 
               <motion.div variants={fadeUp} className="hero-buttons" style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                <a href={`${import.meta.env.BASE_URL}Assets/Resume/Arya_Tiwari_Resume.pdf`} target="_blank" rel="noreferrer" className="glass-btn" style={{ 
+                <a href={`${import.meta.env.BASE_URL}static/Resume/Arya_Tiwari_Resume.pdf`} target="_blank" rel="noreferrer" className="glass-btn" style={{ 
                   fontFamily: 'var(--font-sans)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.15em',
                   padding: '12px 24px', borderRadius: '8px', textDecoration: 'none'
                 }}>
@@ -274,7 +274,7 @@ function App() {
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               >
                 <motion.img 
-                  src={`${import.meta.env.BASE_URL}Assets/MyPic/MyPic.jpeg`} 
+                  src={`${import.meta.env.BASE_URL}static/MyPic/MyPic.jpeg`} 
                   alt="Arya Tiwari" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px', filter: 'contrast(1.1) sepia(0.1) saturate(0.8)' }} 
                   animate={{ scale: [1, 1.05, 1] }}
@@ -353,7 +353,7 @@ function App() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-lg)' }}>
             {certs.map((cert, idx) => (
               <motion.a 
-                href={`${import.meta.env.BASE_URL}Assets/certificates/${cert.pdf}`} 
+                href={`${import.meta.env.BASE_URL}static/certificates/${cert.pdf}`} 
                 target="_blank" 
                 rel="noreferrer"
                 key={idx}
@@ -371,7 +371,7 @@ function App() {
                 onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'rgba(242, 235, 217, 0.05)'; }}
               >
                 <div style={{ width: '100%', height: '200px', backgroundColor: 'var(--bg-forest)', borderRadius: '8px', marginBottom: 'var(--spacing-md)', overflow: 'hidden', position: 'relative' }}>
-                  <img src={`${import.meta.env.BASE_URL}Assets/certificates/${cert.thumb}`} alt={cert.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
+                  <img src={`${import.meta.env.BASE_URL}static/certificates/${cert.thumb}`} alt={cert.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
                 </div>
                 <h3 style={{ fontSize: '1.2rem', fontFamily: 'var(--font-sans)', color: 'var(--text-champagne)', marginBottom: '0.5rem' }}>{cert.title}</h3>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -467,7 +467,7 @@ function App() {
               <a href="https://www.linkedin.com/in/arya-tiwari-01ba84292?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="hover-underline" target="_blank" rel="noreferrer">LinkedIn</a>
               <a href="https://www.instagram.com/cap.videoguru?igsh=bjlwNXQwMTZzamY5" className="hover-underline" target="_blank" rel="noreferrer">Instagram</a>
               <a href="https://wa.me/919999606103" className="hover-underline" target="_blank" rel="noreferrer">WhatsApp</a>
-              <a href={`${import.meta.env.BASE_URL}Assets/Resume/Arya_Tiwari_Resume.pdf`} className="hover-underline" target="_blank" rel="noreferrer">Resumé</a>
+              <a href={`${import.meta.env.BASE_URL}static/Resume/Arya_Tiwari_Resume.pdf`} className="hover-underline" target="_blank" rel="noreferrer">Resumé</a>
             </div>
             
             <p style={{ marginTop: 'var(--spacing-xxl)', fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
